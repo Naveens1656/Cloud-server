@@ -1,0 +1,39 @@
+.place-container {
+  padding: 20px;
+}
+
+.title {
+  color: #4243a1;
+  margin-bottom: 20px;
+}
+
+.submenu {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.submenu a {
+  text-decoration: none;
+  background: #4243a1;
+  padding: 8px 16px;
+  color: #fff;
+  border-radius: 6px;
+  transition: background 0.2s ease-in-out;
+}
+
+.submenu a:hover {
+  background: #2f3080;
+}
+
+.submenu a.active {
+  background: #22225e;
+}
+
+.content-box {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  min-height: 150px;
+  background: #fafafa;
+}

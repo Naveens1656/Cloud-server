@@ -1,0 +1,36 @@
+<div class="billing-wrap">
+  <h2 class="billing-title">Billing Management</h2>
+
+  <form class="billing-form" (ngSubmit)="addBilling()">
+    <div class="form-row">
+      <label>Billing Code</label>
+      <input type="text" [(ngModel)]="newBilling.code" name="code" placeholder="Enter billing code" required />
+    </div>
+
+    <div class="form-row">
+      <label>Description</label>
+      <input type="text" [(ngModel)]="newBilling.description" name="description" placeholder="Enter description" required />
+    </div>
+
+    <button type="submit" class="btn-primary">Add Billing</button>
+  </form>
+
+  <table class="billing-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Billing Code</th>
+        <th>Description</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let billing of billings; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ billing.code }}</td>
+        <td>{{ billing.description }}</td>
+        <td><button class="btn-danger" (click)="deleteBilling(i)">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

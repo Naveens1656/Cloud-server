@@ -1,0 +1,36 @@
+<div class="charge-type-wrap">
+  <h2 class="charge-type-title">Charge Type</h2>
+
+  <form class="charge-type-form" (ngSubmit)="addType()">
+    <div class="form-row">
+      <label>Type Name</label>
+      <input type="text" [(ngModel)]="newType.name" name="name" placeholder="Enter type name" required />
+    </div>
+
+    <div class="form-row">
+      <label>Description</label>
+      <input type="text" [(ngModel)]="newType.description" name="description" placeholder="Enter description" required />
+    </div>
+
+    <button type="submit" class="btn-primary">Add Type</button>
+  </form>
+
+  <table class="charge-type-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Type Name</th>
+        <th>Description</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let type of chargeTypes; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ type.name }}</td>
+        <td>{{ type.description }}</td>
+        <td><button class="btn-danger" (click)="deleteType(i)">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

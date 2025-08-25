@@ -1,0 +1,34 @@
+.reports-wrap {
+  padding: 20px;
+  background: #f9f9fb;
+  border-radius: 8px;
+}
+
+.reports-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.reports-list {
+  list-style: none;
+  padding: 0;
+}
+
+.reports-list li {
+  margin: 10px 0;
+}
+
+.reports-list a {
+  text-decoration: none;
+  color: #0077cc;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.reports-list a:hover {
+  color: #005599;
+  text-decoration: underline;
+}

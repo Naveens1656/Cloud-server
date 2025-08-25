@@ -1,0 +1,27 @@
+<div class="department-wrap">
+  <h2 class="department-title">{{ title }}</h2>
+
+  <div class="department-toolbar">
+    <button class="btn btn-primary">+ Add Department</button>
+  </div>
+
+  <table class="department-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Department</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let dept of departments; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ dept.name }}</td>
+        <td>
+          <button class="btn btn-sm btn-light">Edit</button>
+          <button class="btn btn-sm btn-danger">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

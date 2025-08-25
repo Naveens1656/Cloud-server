@@ -1,0 +1,26 @@
+<div class="print-report-wrap">
+  <h2 class="print-report-title">AWB Print Report</h2>
+
+  <table class="report-table">
+    <thead>
+      <tr>
+        <th>AWB No</th>
+        <th>Client</th>
+        <th>Status</th>
+        <th>Print Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of printData">
+        <td>{{ row.awbNo }}</td>
+        <td>{{ row.client }}</td>
+        <td>
+          <span [ngClass]="{'status-printed': row.status === 'Printed', 'status-pending': row.status === 'Pending'}">
+            {{ row.status }}
+          </span>
+        </td>
+        <td>{{ row.printDate }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

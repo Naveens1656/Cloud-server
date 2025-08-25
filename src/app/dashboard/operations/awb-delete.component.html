@@ -1,0 +1,21 @@
+<div class="awb-delete-wrap">
+  <h3>AWB Delete</h3>
+
+  <table class="awb-table">
+    <thead>
+      <tr>
+        <th>AWB No.</th>
+        <th>Shipper</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let awb of awbs; let i = index">
+        <td>{{ awb.number }}</td>
+        <td>{{ awb.shipper }}</td>
+        <td><button class="btn-danger" (click)="deleteAwb(i)">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+

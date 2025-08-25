@@ -1,0 +1,81 @@
+.charge-type-wrap {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fdfdfd;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.charge-type-title {
+  text-align: center;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.charge-type-form {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.charge-type-form .form-row {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.charge-type-form label {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.charge-type-form input {
+  padding: 8px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+}
+
+.btn-primary {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #1e7e34;
+}
+
+.charge-type-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.charge-type-table th,
+.charge-type-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.charge-type-table th {
+  background: #28a745;
+  color: white;
+}
+
+.btn-danger {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-danger:hover {
+  background: #a71d2a;
+}

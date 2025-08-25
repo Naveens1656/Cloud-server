@@ -1,0 +1,81 @@
+/* === Client === */
+.client-wrap {
+  background: #fff;
+  border: 1px solid #e6e6ec;
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: 0 2px 10px rgba(24, 39, 75, 0.06);
+}
+
+.client-title {
+  margin: 0 0 12px;
+  color: #4243a1;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.client-toolbar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.client-btn {
+  border: 1px solid #4243a1;
+  background: #4243a1;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.client-btn:hover { background: #2f3080; }
+.client-btn--light {
+  background: #fff;
+  color: #4243a1;
+}
+
+.client-form {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 12px;
+  margin-top: 10px;
+}
+.client-form .field {
+  grid-column: span 6;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.client-form label { font-size: 13px; color: #44465a; }
+.client-form input, .client-form select {
+  border: 1px solid #d7d7e3;
+  border-radius: 8px;
+  padding: 9px 11px;
+}
+.client-form input:focus, .client-form select:focus {
+  border-color: #4243a1;
+  box-shadow: 0 0 0 3px rgba(66,67,161,.12);
+}
+
+/* Table */
+.client-table {
+  width: 100%;
+  margin-top: 14px;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.client-table th, .client-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #eee;
+}
+.client-table th {
+  background: #f6f7ff;
+  color: #2b2d42;
+}
+.client-table tr:hover td { background: #fafbff; }
+
+@media (max-width: 768px) {
+  .client-form .field { grid-column: span 12; }
+}

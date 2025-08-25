@@ -1,0 +1,26 @@
+<div class="sales-report-wrap">
+  <h2 class="sales-report-title">AWB Sales Report</h2>
+
+  <table class="report-table">
+    <thead>
+      <tr>
+        <th>AWB No</th>
+        <th>Client</th>
+        <th>Amount</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of salesData">
+        <td>{{ row.awbNo }}</td>
+        <td>{{ row.client }}</td>
+        <td>{{ row.amount | currency:'USD' }}</td>
+        <td>{{ row.date }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="report-total">
+    <strong>Total Sales:</strong> {{ totalAmount | currency:'USD' }}
+  </div>
+</div>

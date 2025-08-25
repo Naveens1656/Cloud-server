@@ -1,0 +1,30 @@
+<div class="awb-view-modify-wrap">
+  <h3>AWB View & Modify</h3>
+
+  <table class="awb-table">
+    <thead>
+      <tr>
+        <th>AWB No.</th>
+        <th>Shipper</th>
+        <th>Consignee</th>
+        <th>Status</th>
+        <th>Modify</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let awb of awbs; let i = index">
+        <td>{{ awb.number }}</td>
+        <td>{{ awb.shipper }}</td>
+        <td>{{ awb.consignee }}</td>
+        <td>{{ awb.status }}</td>
+        <td>
+          <select (change)="updateStatus(i, $event.target.value)">
+            <option>Confirmed</option>
+            <option>Pending</option>
+            <option>Cancelled</option>
+          </select>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

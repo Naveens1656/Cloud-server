@@ -1,0 +1,16 @@
+<div class="place-container">
+  <h2 class="title">Place Management</h2>
+
+  <div class="submenu">
+    <a routerLink="country" routerLinkActive="active">Country</a>
+    <a routerLink="delivery-state" routerLinkActive="active">Delivery State</a>
+    <a routerLink="clearance-location" routerLinkActive="active">Clearance Location</a>
+    <a routerLink="origin-branch" routerLinkActive="active">Origin Branch</a>
+  </div>
+
+  <div class="content-box">
+    <!-- Child routes will load here -->
+    <router-outlet></router-outlet>
+  </div>
+</div>
+

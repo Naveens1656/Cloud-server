@@ -1,0 +1,14 @@
+.dashboard {
+  padding: 30px;
+}
+h1 {
+  color: #4243a1;
+}
+.menu a {
+  margin-right: 15px;
+  text-decoration: none;
+  background: #4243a1;
+  padding: 8px 15px;
+  color: #fff;
+  border-radius: 6px;
+}

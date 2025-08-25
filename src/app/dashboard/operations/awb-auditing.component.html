@@ -1,0 +1,22 @@
+<div class="awb-auditing-wrap">
+  <h3>AWB Auditing</h3>
+
+  <table class="awb-table">
+    <thead>
+      <tr>
+        <th>AWB No.</th>
+        <th>Checked By</th>
+        <th>Remarks</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let audit of audits">
+        <td>{{ audit.awb }}</td>
+        <td>{{ audit.checkedBy }}</td>
+        <td>{{ audit.remarks }}</td>
+        <td>{{ audit.date }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,31 @@
+<div class="company-wrap">
+  <h2 class="company-title">{{ title }}</h2>
+
+  <div class="company-toolbar">
+    <button class="btn btn-primary">+ Add Company</button>
+  </div>
+
+  <table class="company-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Company Name</th>
+        <th>GST Number</th>
+        <th>Location</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let comp of companies; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ comp.name }}</td>
+        <td>{{ comp.gst }}</td>
+        <td>{{ comp.location }}</td>
+        <td>
+          <button class="btn btn-sm btn-light">Edit</button>
+          <button class="btn btn-sm btn-danger">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

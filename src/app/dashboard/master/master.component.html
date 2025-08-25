@@ -1,0 +1,18 @@
+<div class="master-container">
+  <h2 class="title">Master Module</h2>
+
+  <div class="master-menu">
+    <a routerLink="place" routerLinkActive="active">Place</a>
+    <a routerLink="organization" routerLinkActive="active">Organization</a>
+    <a routerLink="tariff" routerLinkActive="active">Tariff</a>
+    <a routerLink="item-hs-entry" routerLinkActive="active">Item HS Entry</a>
+    <a routerLink="currency" routerLinkActive="active">Currency</a>
+    <a routerLink="unit-of-measurement" routerLinkActive="active">Unit of Measurement</a>
+    <a routerLink="billing" routerLinkActive="active">Billing</a>
+  </div>
+
+  <div class="master-content">
+    <!-- Child pages load here -->
+    <router-outlet></router-outlet>
+  </div>
+</div>

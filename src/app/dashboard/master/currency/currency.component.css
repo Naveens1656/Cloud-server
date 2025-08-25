@@ -1,0 +1,108 @@
+/* ========== Currency Module Styles ========== */
+.currency-wrap {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 900px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.currency-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #00695c; /* teal/green accent */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form Styling */
+.currency-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.form-row input {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: border 0.3s;
+}
+
+.form-row input:focus {
+  border-color: #00897b; /* teal accent */
+  outline: none;
+}
+
+/* Buttons */
+.btn-primary {
+  background: #00897b;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background: #00695c;
+}
+
+.btn-danger {
+  background: #e53935;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.btn-danger:hover {
+  background: #b71c1c;
+}
+
+/* Table Styling */
+.currency-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.currency-table th,
+.currency-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.currency-table th {
+  background: #e0f2f1; /* light teal */
+  color: #004d40;
+  font-weight: 600;
+}
+
+.currency-table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.currency-table tr:hover {
+  background: #f1f8f6;
+}

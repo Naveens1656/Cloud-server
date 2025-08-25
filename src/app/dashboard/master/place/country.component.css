@@ -1,0 +1,122 @@
+/* === Country === */
+.country-wrap {
+  display: block;
+  background: #ffffff;
+  border: 1px solid #e6e6ec;
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: 0 2px 10px rgba(24, 39, 75, 0.06);
+}
+
+.country-title {
+  margin: 0 0 12px;
+  color: #4243a1;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.country-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.country-btn {
+  appearance: none;
+  border: 1px solid #4243a1;
+  background: #4243a1;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: transform .05s ease, background .2s ease, box-shadow .2s ease;
+}
+.country-btn:hover { background: #2f3080; }
+.country-btn:active { transform: translateY(1px); }
+.country-btn--ghost {
+  background: #fff;
+  color: #4243a1;
+}
+.country-btn--ghost:hover { background: #f2f3ff; }
+
+.country-form {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.country-form .field {
+  grid-column: span 6;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.country-form label {
+  font-size: 13px;
+  color: #44465a;
+}
+
+.country-form input, .country-form select, .country-form textarea {
+  border: 1px solid #d7d7e3;
+  border-radius: 8px;
+  padding: 9px 11px;
+  outline: none;
+  background: #fff;
+  transition: border .15s ease, box-shadow .15s ease;
+}
+.country-form input:focus,
+.country-form select:focus,
+.country-form textarea:focus {
+  border-color: #4243a1;
+  box-shadow: 0 0 0 3px rgba(66, 67, 161, 0.12);
+}
+
+.country-table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.country-table th, .country-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  font-size: 14px;
+}
+.country-table th {
+  background: #f6f7ff;
+  color: #2b2d42;
+  font-weight: 600;
+}
+.country-table tr:hover td {
+  background: #fafbff;
+}
+
+.country-badge {
+  display: inline-block;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: #eef0ff;
+  color: #3940b0;
+}
+
+.country-empty {
+  text-align: center;
+  padding: 30px 10px;
+  color: #6b6f85;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .country-form .field { grid-column: span 12; }
+  .country-toolbar { gap: 8px; }
+}

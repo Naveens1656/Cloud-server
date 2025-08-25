@@ -1,0 +1,30 @@
+<div class="carrier-tariff-wrap">
+  <h2 class="carrier-tariff-title">Carrier Tariffs</h2>
+
+  <div class="carrier-form">
+    <input [(ngModel)]="newTariff.carrier" placeholder="Carrier Name" />
+    <input [(ngModel)]="newTariff.rate" type="number" placeholder="Rate" />
+    <button class="btn btn-primary" (click)="addCarrierTariff()">Add</button>
+  </div>
+
+  <table class="carrier-tariff-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Carrier</th>
+        <th>Rate</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let c of carrierTariffs">
+        <td>{{ c.id }}</td>
+        <td>{{ c.carrier }}</td>
+        <td>{{ c.rate }}</td>
+        <td>
+          <button class="btn btn-danger" (click)="deleteCarrierTariff(c.id)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

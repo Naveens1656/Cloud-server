@@ -1,0 +1,36 @@
+<div class="charge-name-wrap">
+  <h2 class="charge-name-title">Charge Name</h2>
+
+  <form class="charge-name-form" (ngSubmit)="addCharge()">
+    <div class="form-row">
+      <label>Charge Name</label>
+      <input type="text" [(ngModel)]="newCharge.name" name="name" placeholder="Enter charge name" required />
+    </div>
+
+    <div class="form-row">
+      <label>Category</label>
+      <input type="text" [(ngModel)]="newCharge.category" name="category" placeholder="Enter category" required />
+    </div>
+
+    <button type="submit" class="btn-primary">Add Charge</button>
+  </form>
+
+  <table class="charge-name-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Charge Name</th>
+        <th>Category</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let charge of chargeNames; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ charge.name }}</td>
+        <td>{{ charge.category }}</td>
+        <td><button class="btn-danger" (click)="deleteCharge(i)">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

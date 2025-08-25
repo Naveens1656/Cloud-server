@@ -1,0 +1,40 @@
+.master-container {
+  padding: 20px;
+}
+
+.title {
+  color: #4243a1;
+  margin-bottom: 20px;
+}
+
+.master-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.master-menu a {
+  text-decoration: none;
+  background: #4243a1;
+  padding: 10px 18px;
+  color: #fff;
+  border-radius: 6px;
+  transition: background 0.2s ease-in-out;
+}
+
+.master-menu a:hover {
+  background: #2f3080;
+}
+
+.master-menu a.active {
+  background: #22225e;
+}
+
+.master-content {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  min-height: 200px;
+  background: #fafafa;
+}

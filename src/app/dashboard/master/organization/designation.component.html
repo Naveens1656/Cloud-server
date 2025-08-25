@@ -1,0 +1,27 @@
+<div class="designation-wrap">
+  <h2 class="designation-title">{{ title }}</h2>
+
+  <div class="designation-toolbar">
+    <button class="btn btn-primary">+ Add Designation</button>
+  </div>
+
+  <table class="designation-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Designation</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let desig of designations; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ desig.name }}</td>
+        <td>
+          <button class="btn btn-sm btn-light">Edit</button>
+          <button class="btn btn-sm btn-danger">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
